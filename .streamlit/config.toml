@@ -1,0 +1,12 @@
+import streamlit as st
+
+st.set_page_config(
+    page_title = "Matematika Geometri",
+    page_icon = ":fire:"
+)
+
+with st.sidebar:
+    col1, col2, col3 = st.columns((1,2,1))
+    with col2:
+        path = os.path.join(os.path.dirname(__file__), "apip.jpeg")
+        st.image(path, caption="My Image")
